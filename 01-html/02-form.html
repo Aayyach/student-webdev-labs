@@ -5,10 +5,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Exercise 02 - Form</title>
+    <style>
+      fieldset {
+        margin: 0;
+        border: 0;
+        padding: 0;
+      }
+    </style>
   </head>
   <body>
     <main>
       <!-- Add your code here -->
+      <h1>Roth IRA Calculator</h1>
+      <form action="/submitform">
+        <div>
+          <label for="balance">Balance ($)</label><br />
+          <input type="text" id="balance" name="balance" />
+        </div>
+        <br />
+        <div>
+          <label for="annual">Annual contribution ($)</label><br />
+          <input type="text" id="annual" name="annual" />
+        </div>
+        <br />
+        <fieldset>
+          <legend>Maximize contributions?</legend>
+          <input type="radio" id="yes" name="max" value="yes" />
+          <label for="yes">Yes</label>
+          <input type="radio" id="no" name="max" value="no" />
+          <label for="no">No</label>
+        </fieldset>
+        <br />
+        <div>
+          <label for="ROR">Expected rate of return (%)</label><br />
+          <input type="number" id="ROR" name="ROR" />
+        </div>
+        <br />
+        <div>
+          <label for="age">Current age</label><br />
+          <input type="number" id="age" name="age" />
+        </div>
+        <br />
+        <div>
+          <label for="retire">Retirement age</label><br />
+          <input type="number" id="retire" name="retire" />
+        </div>
+        <br />
+        <div>
+          <label for="tax">Marginal tax rate (%)</label><br />
+          <input type="number" id="tax" name="tax" />
+        </div>
+        <br />
+        <input type="submit" value="Calculate" />
+        <input type="reset" value="Reset" />
+        <p>
+          This exercise is a simplified version of the Roth IRA Calculator at
+          <a href="https://www.calculator.net/">Calculator.net</a>
+        </p>
+      </form>
     </main>
   </body>
 </html>
