@@ -9,6 +9,78 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   color: var(--main-color);
   background-color: var(--bg-color);
+  margin: 0;
 }
 
 /* Add your code here */
+.header {
+  background-color: var(--pokemon-yellow);
+  padding-top: 0.5rem;
+  padding-bottom: 0.25rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.brand-logo {
+  color: var(--bg-color);
+  padding-left: 1rem;
+}
+
+.search-bar {
+  border: none;
+  border-radius: 3px;
+  margin: 1.5rem;
+  padding: 0.5rem 3rem 0.5rem 0.5rem;
+}
+
+.container {
+  padding: 1rem;
+  text-align: center;
+}
+
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
+.loading,
+.errorMessage {
+  color: var(--main-light-color);
+}
+
+.poke-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.pokemonCard {
+  width: 300px;
+  margin: 0.5rem;
+  padding: 1rem 0.5rem 2rem 0.5rem;
+  text-align: center;
+  background-color: var(--main-light-color);
+}
+
+.pokemonCard:hover {
+  background-color: var(--pokemon-yellow);
+  transition: 0.1s ease-in;
+}
+
+.pokemonType {
+  margin: 0.5rem;
+  padding: 0.5rem;
+}
+
+.display-none {
+  display: none;
+}
+
+.display-error {
+  color: var(--main-light-color);
+  display: flex;
+  justify-content: center;
+}
