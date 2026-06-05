@@ -14,7 +14,7 @@
 html {
   box-sizing: border-box;
   font-size: 18px;
-  font-family: 'Noto Sans', sans-serif;
+  font-family: "Noto Sans", sans-serif;
   scroll-padding-top: 60px;
 }
 
@@ -38,6 +38,12 @@ body {
   padding: 20px;
   max-width: 1024px;
   margin: auto;
+}
+
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .space-evenly-distributed-row-container {
@@ -214,7 +220,7 @@ body {
   border-radius: 50%;
   display: block;
   align-self: start;
-  background-image: url('./images/1920px-Adult_Scottish_Fold.jpg');
+  background-image: url("./images/1920px-Adult_Scottish_Fold.jpg");
   background-position: center;
   background-size: cover;
 }
