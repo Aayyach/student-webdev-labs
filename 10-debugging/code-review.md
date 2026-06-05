@@ -272,10 +272,10 @@ The reason this issue was happening was because of a TypeError where the querySe
 
 I also added a conditional statement to check if the img element already existed in the DOM so it doesn't get appended to the webpage multiple times. I added styles for the loading-container in the styles.css file so that the loader gif was displayed in the middle of the container, and finally I set the "loading-container" div class to "loading-container" at the beginning of the fetchCatFacts function to remove its initial class of "display-none."
 
-![Image of the TypeError in browser console](../../webdev2/images/TypeError.png)
+![Image of the TypeError in browser console](../images/TypeError.png)
 This is the TypeError exception that was initially raised.
 
-![Image of HTML after interacting with the DOM](../../webdev2/images/HTML.png)
+![Image of HTML after interacting with the DOM](../images/HTML.png)
 This image is to show that the class of the loading-container was actually initially set to display-none.
 
 Initial code:
